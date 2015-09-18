@@ -9,26 +9,14 @@
 #                                                                             #
 ###############################################################################
 #
-# A script to make a telescoped.mesh file without pterrors
+# python + glob wrapper for bzip2 & bunzip2
 #
-# process:
-# 	subtract the TEL_RA from LST to get HA
-# 	get field centre from astrometry and subtract the actual from the commanded
-# 	make a file with:
-# 		HA (decimal hours) DEC (decimal degrees) HA_err (arcmin) DEC_err (arcmin)
-# 		
-# 	apply the mesh
-# 	repeat the spiral to see if it improves
+# When zipping or unzipping lots of files 
+# Linux may complain about the list being too long,
+# this will fix that.
 #
 # to do:
 #
-
-# pybz2
-# python + glob wrapper for bunzip2
-# When zipping or unzipping lots of files 
-# Linux may complain about the list being too long,
-# this will fix that. 
-
 
 import argparse as ap
 import glob as g

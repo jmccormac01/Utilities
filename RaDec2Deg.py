@@ -18,7 +18,7 @@ def RaDec2Deg(x,y):
 		c=SkyCoord(x,y,unit=(u.hourangle, u.deg))
 		print c.to_string('decimal')
 
-if len sys.argv != 2:
+if len(sys.argv) != 3:
 	print "USAGE: python RaDec2Deg.py RA DEC"
 	
 RaDec2Deg(sys.argv[1],sys.argv[2])

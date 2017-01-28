@@ -17,4 +17,4 @@
 
 import glob as g
 t=g.glob('*.f*')
-print "%d *.f* images\n" % len(t)
+print("%d *.f* images\n" % len(t))

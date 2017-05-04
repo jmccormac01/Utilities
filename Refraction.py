@@ -1,4 +1,6 @@
 import numpy as np
+import matplotlib
+matplotlib.use('QT5Agg')
 import matplotlib.pyplot as pl
 
 # pressure correction
